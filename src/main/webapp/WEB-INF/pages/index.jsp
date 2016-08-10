@@ -11,6 +11,17 @@
             <c:out value="${s}" />
         </c:forEach>
 
+
+        <form action="/common" method="post" enctype="multipart/form-data">
+            <input type="file" name="file"/>
+            <br><input type="file" name="file"/>
+            <br><input type="file" name="file"/><br>
+            <br> <input type="submit" value="Upload" style="height:50px;width:150px"/>
+        </form>
+
+
+
+
         <c:url value="/logout" var="logoutUrl" />
         <p>Click to logout: <a href="${logoutUrl}">LOGOUT</a></p>
     </div>
